@@ -50,7 +50,6 @@ See [LICENSE](./LICENSE).
 - [Luxi fonts](https://github.com/basil/bh-ttf)
 - [Bitstream fonts](https://github.com/basil/bitstream-type1)
 - [IBM Courier](https://github.com/basil/ibm-type1)
-- [URW base 35 fonts](https://github.com/basil/urw-base35-fonts)
 - [URW free fonts](https://github.com/basil/urw-free-fonts)
 
 ## Original
