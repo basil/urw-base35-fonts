@@ -18,6 +18,10 @@ URW's Base 35 fonts are open-source recreations of the 35 core fonts required by
 These original files are still available and can be freely downloaded, but they can be hard to find.
 So I tracked them down and wrote a script to convert them into a new package of OTFs, TTFs, and webfonts.
 
+## Prerequisites
+
+- [FontForge](https://fontforge.org)
+
 ## Build
 
 ```bash
