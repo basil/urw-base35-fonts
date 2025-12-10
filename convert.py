@@ -97,6 +97,19 @@ def process_family(stem, files, out_dir, families):
         had_unicode_fixes = fix_unicode_from_glyph_names(f)
 
         font = f.fontname
+        corrections = {
+            "BdIta": "Bold Italic",
+            "Bol": "Bold",
+            "BolIta": "Bold Italic",
+            "Ita": "Italic",
+            "MedIta": "Medium Italic",
+            "Med": "Medium",
+            "Reg": "Regular",
+        }
+        for old, new in corrections.items():
+            if font.endswith(f"-{old}"):
+                font = font.replace(f"-{old}", f"-{new.replace(' ', '')}")
+                f.fontname = font
         family_name = font.split("-", 1)[0]
         have = set(files.keys())
         want = {".otf", ".ttf", ".woff2"}
